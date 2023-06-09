@@ -1,0 +1,6 @@
+# netlify.toml
+
+[build]
+  publish = "dist"
+  command = "yarn build"
+  
