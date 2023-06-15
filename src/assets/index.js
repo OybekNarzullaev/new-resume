@@ -1,0 +1,103 @@
+import logo from "./logo.svg";
+import backend from "./backend.png";
+import creator from "./creator.png";
+import mobile from "./mobile.png";
+import web from "./web.png";
+import github from "./github.png";
+import menu from "./menu.svg";
+import close from "./close.svg";
+
+import css from "./tech/css.png";
+import docker from "./tech/docker.png";
+import figma from "./tech/figma.png";
+import git from "./tech/git.png";
+import html from "./tech/html.png";
+import javascript from "./tech/javascript.png";
+import mongodb from "./tech/mongodb.png";
+import nodejs from "./tech/nodejs.png";
+import reactjs from "./tech/reactjs.png";
+import redux from "./tech/redux.png";
+import tailwind from "./tech/tailwind.png";
+import typescript from "./tech/typescript.png";
+import threejs from "./tech/threejs.svg";
+import jquery from "./tech/jquery.png";
+import python from "./tech/python.png";
+import django from "./tech/django.png";
+import postgresql from "./tech/postgresql.png";
+import golang from "./tech/golang.png";
+import cpp from "./tech/cpp.png";
+import redis from "./tech/redis.png";
+import mysql from "./tech/mysql.png";
+
+import meta from "./company/meta.png";
+import shopify from "./company/shopify.png";
+import starbucks from "./company/starbucks.png";
+import tesla from "./company/tesla.png";
+
+import carrent from "./carrent.png";
+import jobit from "./jobit.png";
+import tripguide from "./tripguide.png";
+
+import UzbFlag from "./uzb-flag.png";
+import RusFlag from "./rus-flag.png";
+import EngFlag from "./eng-flag.png";
+
+// social
+import telegram from "./telegram.png";
+import facebook from "./facebook.png";
+import linkedin from "./linkedin.png";
+
+// company
+import bepro from "./company/bepro.jpg";
+import hamkorbank from "./company/hamkorbank.png";
+import uzgashkliti from "./company/uzgashkliti.png";
+
+import picture from "./picture.png";
+export {
+  logo,
+  backend,
+  creator,
+  mobile,
+  web,
+  github,
+  menu,
+  close,
+  css,
+  docker,
+  figma,
+  git,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  jquery,
+  python,
+  django,
+  postgresql,
+  meta,
+  shopify,
+  starbucks,
+  tesla,
+  carrent,
+  jobit,
+  tripguide,
+  UzbFlag,
+  EngFlag,
+  RusFlag,
+  golang,
+  cpp,
+  redis,
+  mysql,
+  telegram,
+  linkedin,
+  facebook,
+  bepro,
+  hamkorbank,
+  uzgashkliti,
+  picture,
+};
