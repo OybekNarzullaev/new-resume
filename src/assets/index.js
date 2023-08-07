@@ -25,6 +25,9 @@ import python from "./tech/python.png";
 import django from "./tech/django.png";
 import postgresql from "./tech/postgresql.png";
 import golang from "./tech/golang.png";
+import cpp from "./tech/cpp.png";
+import redis from "./tech/redis.png";
+import mysql from "./tech/mysql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -39,6 +42,10 @@ import UzbFlag from "./uzb-flag.png";
 import RusFlag from "./rus-flag.png";
 import EngFlag from "./eng-flag.png";
 
+// works
+import LoanControl from "./work/loan_control.jpg";
+import MonitoringDshk from "./work/monitoring_dshk.png";
+import AdminDshk from "./work/admin_panel.png";
 export {
   logo,
   backend,
@@ -76,4 +83,10 @@ export {
   EngFlag,
   RusFlag,
   golang,
+  cpp,
+  redis,
+  mysql,
+  LoanControl,
+  MonitoringDshk,
+  AdminDshk,
 };

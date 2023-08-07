@@ -31,6 +31,12 @@ import {
   python,
   golang,
   jquery,
+  cpp,
+  redis,
+  mysql,
+  LoanControl,
+  MonitoringDshk,
+  AdminDshk,
 } from "../assets";
 
 export const navLinks = [
@@ -63,14 +69,16 @@ const services = [
   },
 ];
 
-const frontSkills = [
+const programmingLanguages = [
   {
+    id: 1,
     name: "JavaScript",
     icon: javascript,
     per: 80,
     code: "javascript",
   },
   {
+    id: 2,
     name: "TypeScript",
     icon: typescript,
     per: 70,
@@ -88,6 +96,130 @@ const frontSkills = [
     per: 65,
     code: "golang",
   },
+  {
+    name: "C++",
+    icon: cpp,
+    per: 65,
+    code: "cpp",
+  },
+];
+
+const technologies = [
+  {
+    id: 1,
+    name: "HTML 5",
+    icon: html,
+    per: 80,
+    code: "html5",
+  },
+  {
+    id: 2,
+    name: "CSS 3",
+    icon: css,
+    per: 80,
+    code: "css3",
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    icon: javascript,
+    per: 80,
+    code: "javascript",
+  },
+  {
+    id: 4,
+    name: "TypeScript",
+    icon: typescript,
+    per: 70,
+    code: "typescript",
+  },
+  {
+    id: 5,
+    name: "Python",
+    icon: python,
+    per: 85,
+    code: "python",
+  },
+  {
+    id: 6,
+    name: "Golang",
+    icon: golang,
+    per: 65,
+    code: "golang",
+  },
+  {
+    id: 7,
+    name: "C++",
+    icon: cpp,
+    per: 65,
+    code: "cpp",
+  },
+  {
+    id: 8,
+    name: "React JS",
+    icon: reactjs,
+    per: 70,
+    code: "reactjs",
+  },
+  {
+    id: 9,
+    name: "Node JS",
+    icon: nodejs,
+    per: 65,
+    code: "nodejs",
+  },
+  {
+    id: 10,
+    name: "Tailwind CSS",
+    icon: tailwind,
+    per: 60,
+    code: "tailwind",
+  },
+  {
+    id: 11,
+    name: "Django",
+    icon: django,
+    per: 75,
+    code: "django",
+  },
+  {
+    id: 12,
+    name: "Mongo DB",
+    icon: mongodb,
+    per: 75,
+    code: "mongodb",
+  },
+  {
+    id: 13,
+    name: "Postgres SQL",
+    icon: postgresql,
+    per: 70,
+    code: "postgresql",
+  },
+
+  {
+    id: 15,
+    name: "Redis",
+    icon: redis,
+    per: 75,
+    code: "redis",
+  },
+  {
+    id: 16,
+    name: "Git",
+    icon: git,
+    per: 65,
+    code: "git",
+  },
+  {
+    id: 17,
+    name: "Docker",
+    icon: docker,
+    per: 65,
+    code: "docker",
+  },
+];
+const frontSkills = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -222,12 +354,7 @@ const experiences = [
     icon: starbucks,
     iconBg: "#383E56",
     date: "June 2021 - December 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    points: ["Training school teachers in Python and Django."],
   },
   {
     title: "Full stack Developer (Golang, React JS)",
@@ -236,10 +363,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "January 2022 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing frontend and backend applications using React.js, Golang and other related technologies.",
+      "Project integration with other services like Uzcard and Humo.",
     ],
   },
 
@@ -250,10 +375,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining web applications using React.js, Django and other related technologies.",
     ],
   },
 ];
@@ -287,51 +409,59 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Auto payment to pay off loans",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows auto payment to pay off loans. In this project I worked as frontend develeloper. Design was based on Ant Design. This project included implementing many complex RestfullAPI services between Golang and React app.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "antdesign",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "golang",
         color: "pink-text-gradient",
       },
+      {
+        name: "postgresql",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
+    image: LoanControl,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Monitoring DSHK",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that allows users of a company called UZGASHKLITI to do their work online. In this project I worked as full stack developer. I created some api services in backend side with django application as well as I designed and maintained front side using React JS. I alse used Leaflet JS, flowbite-react libraries",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "leaflet",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "django",
         color: "pink-text-gradient",
       },
+      {
+        name: "postgresql",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
+    image: MonitoringDshk,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Admin panel DSHK",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web application that allows admins to control all their works, contracts, workers and seeing different statistics related to this. In this project I also worked as full stack developer. I created some api services in backend side with django application as well as I designed and maintained front side using React JS.",
     tags: [
       {
         name: "nextjs",
@@ -346,7 +476,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: AdminDshk,
     source_code_link: "https://github.com/",
   },
 ];
@@ -359,4 +489,6 @@ export {
   frontSkills,
   backSkills,
   langSkills,
+  programmingLanguages,
+  technologies,
 };

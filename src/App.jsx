@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -9,11 +11,13 @@ import {
   Works,
   StarsCanvas,
   Skills,
+  Programs,
 } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ToastContainer />
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
@@ -22,7 +26,6 @@ const App = () => {
         <About />
         <Skills />
         <Experience />
-        {/* <Tech /> */}
         <Works />
         <div className="relative z-0">
           <Contact />

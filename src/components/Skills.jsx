@@ -4,22 +4,23 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { frontSkills, backSkills, langSkills } from "../constants";
-import { BallCanvas } from "./canvas";
+import { langSkills, programmingLanguages, technologies } from "../constants";
 
-const SkillCard = ({ data, index }) => (
+const ProgramCard = ({ data, index }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 min-w-[200px] w-[22%] p-10 rounded-3xl overflow-hidden relative"
+    className="bg-black-200 min-w-[180px] w-[22%] p-6 rounded-3xl overflow-hidden relative"
   >
-    <div className="flex gap-3 justify-start items-center">
-      <div className="flex flex-col gap-3 w-full">
-        <div key={data.code} className="w-28 h-28">
-          <BallCanvas icon={data.icon} />
-        </div>
-        <p className="text-white font-black text-xl z-[2]">{data.name}</p>
+    <div className="flex flex-col gap-3 w-full justify-center items-center">
+      <div
+        key={data.code}
+        className="w-28 h-28 bg-white/90 p-3 rounded-lg hover:p-1 hover:bg-white"
+      >
+        <img src={data.icon} className="w-full h-full" />
       </div>
+      <p className="text-white font-black text-xl z-[2]">{data.name}</p>
     </div>
+
     <div className="w-full border-4 border-sky-900 h-4 rounded-full mt-5">
       <div
         className="bg-gradient-to-b from-sky-600 to-sky-600/40 h-full rounded-full"
@@ -60,8 +61,8 @@ const Skills = () => {
         <div
           className={`pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}
         >
-          {frontSkills.map((tec, index) => (
-            <SkillCard key={index} index={index} data={tec} />
+          {technologies.map((item, index) => (
+            <ProgramCard index={index} key={index} data={item} />
           ))}
         </div>
       </div>
